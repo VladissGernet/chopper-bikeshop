@@ -7,11 +7,11 @@
 </head>
 <body>
 <header class="header">
+  <a class="header__logo-link" href="index.html">
+    <img class="header__logo-image" src="img/general/logo.svg" width="184" height="29"
+         alt="Логотип сайта «Chopper Bikeshop».">
+  </a>
   <nav class="header__navigation">
-    <a class="header__logo-link" href="index.html">
-      <img class="header__logo-image" src="img/general/logo.svg" width="184" height="29"
-           alt="Логотип сайта «Chopper Bikeshop».">
-    </a>
     <ul class="header__navigation navigation">
       <li class="navigation__item">
         <a class="navigation__link" href="#">
@@ -57,29 +57,32 @@
   </nav>
 </header>
 <main>
-  <h1 class="visually-hidden">
-    Страница карточки товара.
-  </h1>
-  <ul class="product__breadcrumbs">
-    <li class="product__breadcrumbs-item">
-      Аксессуары
+  <ul class="breadcrumbs">
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link" href="#">
+        Аксессуары
+      </a>
     </li>
-    <li class="product__breadcrumbs-item">
-      Седла
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link" href="#">
+        Седла
+      </a>
     </li>
-    <li class="product__breadcrumbs-item">
-      Brooks
+    <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link">
+        Brooks
+      </a>
     </li>
   </ul>
-  <section class="product">
-    <h2 class="product__title">
-      Седло Steed G67
-    </h2>
+  <article class="product">
     <img class="product__image" src="img/product/saddle-darley-b36q-max.png" width="510" height="380"
          alt="Фото Седла Steed G67.">
     <button class="product__zoom-button" type="button">
       Приблизить
     </button>
+    <h1 class="product__title">
+      Седло Steed G67
+    </h1>
     <p class="product__rating">
       <span class="visually-hidden">Рейтинг</span> (9)
     </p>
@@ -96,136 +99,132 @@
     <button class="product__add-button" type="button">
       В корзину
     </button>
-    <section class="product__additional additional">
-      <h3 class="visually-hidden">
-        Блок дополнительной информации о товаре.
-      </h3>
-      <ul class="additional__list">
-        <li class="additional__item">
-          <button class="additional__button" type="button">
-            Подробное описание
-          </button>
-        </li>
-        <li class="additional__item">
-          <button class="additional__button" type="button">
-            Условия гарантии
-          </button>
-        </li>
-        <li class="additional__item">
-          <button class="additional__button" type="button">
-            Отзывы
-          </button>
-          <ul class="additional__reviews-list">
-            <li class="additional__reviews-item">
-              <blockquote class="additional__review review">
-                <cite class="review__username">
-                  JawPike
-                </cite>
-                <time class="review__date" datetime="2018-03-18">18 / 03 / 2018</time>
-                <p class="review__rate">
-                  <span class="visually-hidden">5 звезд.</span>
-                </p>
-                <p class="review__main-feature">
-                  Максимальный комфорт
-                </p>
-                <p class="review__user-text">
-                  Очень доволен, что приобрел именно это седло. Качество просто отличное!
-                </p>
-              </blockquote>
-            </li>
-          </ul>
-          <a class="additional__add-review" href="#">
-            Оставить отзыв
-          </a>
-        </li>
-        <li class="additional__item">
-          <button class="additional__button" type="button">
-            Обзоры
-          </button>
-        </li>
-      </ul>
-    </section>
-  </section>
+    <ul class="additional__list">
+      <li class="additional__item">
+        <a class="additional__button" href="#">
+          Подробное описание
+        </a>
+      </li>
+      <li class="additional__item">
+        <a class="additional__button" href="#">
+          Условия гарантии
+        </a>
+      </li>
+      <li class="additional__item">
+        <a class="additional__button" href="#">
+          Отзывы
+        </a>
+      </li>
+      <li class="additional__item">
+        <a class="additional__button" href="#">
+          Обзоры
+        </a>
+      </li>
+    </ul>
+    <blockquote class="additional__review review">
+      <p class="review__username">
+        JawPike
+      </p>
+      <time class="review__date" datetime="2018-03-18">18 / 03 / 2018</time>
+      <p class="review__rate">
+        Рейтинг
+      </p>
+      <p class="review__main-feature">
+        Максимальный комфорт
+      </p>
+      <p class="review__user-text">
+        Очень доволен, что приобрел именно это седло. Качество просто отличное!
+      </p>
+    </blockquote>
+    <a class="additional__add-review" href="#">
+      Оставить отзыв
+    </a>
+  </article>
   <section class="goods">
     <h2 class="goods__title">
       С этим товаром смотрят
     </h2>
     <ul class="goods__list">
       <li class="goods__item">
-        <h3 class="goods__title">
-          Седло G-Soul
-        </h3>
-        <img class="goods__image" src="img/goods/pocalypse-fekete.png" width="224" height="160"
-             alt="Изображение товара.">
-        <a class="goods__add-item" href="#">
-          В корзину
+        <a class="goods__item-link" href="#">
+          <h3 class="goods__title">
+            Седло G-Soul
+          </h3>
+          <img class="goods__image" src="img/goods/pocalypse-fekete.png" width="224" height="160"
+               alt="Изображение товара.">
+          <p class="goods__description">
+            натуральная кожа
+          </p>
+          <p class="goods__additional-item-info">
+            доступно в 3 цветах
+          </p>
+          <p class="goods__price">
+            3200 ₽
+          </p>
         </a>
-        <p class="goods__description">
-          натуральная кожа
-        </p>
-        <p class="goods__additional-item-info">
-          доступно в 3 цветах
-        </p>
-        <p class="goods__price">
-          3200 ₽
-        </p>
+        <button class="goods__add-item" type="button">
+          В корзину
+        </button>
       </li>
       <li class="goods__item">
-        <h3 class="goods__title">
-          Сумка на руль Cropalm
-        </h3>
-        <img class="goods__image" src="img/goods/boothill-bike-large-chrome.png" width="224" height="160"
-             alt="Изображение товара.">
-        <a class="goods__add-item" href="#">
-          В корзину
+        <a class="goods__item-link" href="#">
+          <h3 class="goods__title">
+            Сумка на руль Cropalm
+          </h3>
+          <img class="goods__image" src="img/goods/boothill-bike-large-chrome.png" width="224" height="160"
+               alt="Изображение товара.">
+          <p class="goods__description">
+            15х10х5 cm
+          </p>
+          <p class="goods__additional-item-info">
+            натуральная кожа
+          </p>
+          <p class="goods__price">
+            1800 ₽
+          </p>
         </a>
-        <p class="goods__description">
-          15х10х5 cm
-        </p>
-        <p class="goods__additional-item-info">
-          натуральная кожа
-        </p>
-        <p class="goods__price">
-          1800 ₽
-        </p>
+        <button class="goods__add-item" type="button">
+          В корзину
+        </button>
       </li>
       <li class="goods__item">
-        <h3 class="goods__title">
-          Седло Darley B36 q
-        </h3>
-        <img class="goods__image" src="img/goods/inch-chopper-bike-2.png" width="224" height="160"
-             alt="Изображение товара.">
-        <a class="goods__add-item" href="#">
-          В корзину
+        <a class="" href="#">
+          <h3 class="goods__title">
+            Седло Darley B36 q
+          </h3>
+          <img class="goods__image" src="img/goods/inch-chopper-bike-2.png" width="224" height="160"
+               alt="Изображение товара.">
+          <p class="goods__description">
+            натуральная кожа
+          </p>
+          <p class="goods__additional-item-info">
+            доступно в 3 цветах
+          </p>
+          <p class="goods__price">
+            8625 ₽
+          </p>
         </a>
-        <p class="goods__description">
-          натуральная кожа
-        </p>
-        <p class="goods__additional-item-info">
-          доступно в 3 цветах
-        </p>
-        <p class="goods__price">
-          8625 ₽
-        </p>
+        <button class="goods__add-item" type="button">
+          В корзину
+        </button>
       </li>
       <li class="goods__item">
-        <h3 class="goods__title">
-          Звезды Schrima
-        </h3>
-        <img class="goods__image" src="img/goods/inch-chopper-bike.png" width="224" height="160"
-             alt="Изображение товара.">
-        <a class="goods__add-item" href="#">
-          В корзину
+        <a class="goods__item-link" href="#">
+          <h3 class="goods__title">
+            Звезды Schrima
+          </h3>
+          <img class="goods__image" src="img/goods/inch-chopper-bike.png" width="224" height="160"
+               alt="Изображение товара.">
+          <p class="goods__additional-item-info">
+            высокопрочный титановый сплав
+          </p>
+          <p class="goods__price">
+            16780 ₽
+          </p>
         </a>
-        <p class="goods__description">
-          высокопрочный
-        </p>
-        <p class="goods__additional-item-info">
-          титановый сплав
-        </p>
-        <p class="goods__price">
-          16780 ₽
-        </p>
+        <button class="goods__add-item" type="button">
+          В корзину
+        </button>
       </li>
     </ul>
   </section>
@@ -294,18 +293,29 @@
     <img class="footer__logo-image" src="img/general/logo-footer.svg" width="184" height="30"
          alt="Логотип сайта «Chopper Bikeshop».">
   </a>
-  <ul class="footer__legal-info-list">
-    <li class="footer__legal-info-item">
-      <p class="footer__copyright">
-        ©2018
-      </p>
+  <ul class="footer__social-list social">
+    <li class="social__item">
+      <a class="social__link" href="#">
+        Вконтакте
+      </a>
     </li>
-    <li class="footer__legal-info-item">
-      <p class="footer__privacy">
-        Политика конфиденциальности
-      </p>
+    <li class="social__item">
+      <a class="social__link" href="#">
+        Фейсбук
+      </a>
+    </li>
+    <li class="social__item">
+      <a class="social__link" href="#">
+        Инстаграм
+      </a>
     </li>
   </ul>
+  <p class="footer__copyright">
+    ©2018
+  </p>
+  <a class="footer__privacy" href="#">
+    Политика конфиденциальности
+  </a>
 </footer>
 </body>
 </html>
